@@ -1,0 +1,202 @@
+.nomina-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #e8f5e9, #ffffff);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+  }
+  
+  .nomina-header {
+    background: linear-gradient(90deg, #9CCC65, #7CB342);
+    color: #fff;
+    padding: 40px 24px;   
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    animation: fadeInDown 0.6s ease;
+  }
+  
+  .header-icon-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+  
+  .header-icon {
+    color: #fff;
+  }
+  
+  .nomina-header h1 {
+    font-size: 36px; 
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .nomina-subtitulo {
+    font-size: 18px; 
+    margin-top: 10px;
+    color: #f1f8e9;
+  }
+  
+  .nomina-wrapper {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .nomina-sidebar {
+    width: 240px;
+    background-color: #f0fff0;
+    border-right: 1px solid #d0e4d0;
+    padding: 24px 16px;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .sidebar-nomina-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2e7d32;
+    margin-bottom: 8px;
+  }
+  
+  .sidebar-nomina-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .nav-button-nomina {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    border-radius: 20px;
+    background-color: #e0f2f1;
+    color: #2e7d32;
+    border: 2px solid transparent;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-button-nomina:hover {
+    background-color: #b2dfdb;
+  }
+  
+  .nav-button-nomina.active {
+    background-color: #2e7d32;
+    color: #fff;
+    border-color: #1b5e20;
+    box-shadow: 0 0 10px rgba(46, 125, 50, 0.2);
+  }
+  
+  .volver-principal {
+    background-color: #c5e1a5;
+    color: #1b5e20;
+  }
+  
+  .volver-principal:hover {
+    background-color: #aed581;
+  }
+  
+  .nomina-main {
+    flex: 1;
+    background-color: #f5f7fa;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.6s ease;
+  }
+  
+  .nomina-section {
+    margin-bottom: 20px;
+  }
+  
+  .nomina-subsection {
+    margin-bottom: 20px;
+  }
+  
+  .section-title {
+    font-size: 22px;
+    color: #2e7d32;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .section-description {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 16px;
+  }
+  
+  .divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  
+  .placeholder {
+    padding: 20px;
+    text-align: center;
+    color: #888;
+    border: 1px dashed #ccc;
+    border-radius: 8px;
+  }
+  
+  .nomina-footer {
+    text-align: center;
+    padding: 20px;
+    color: #555;
+    font-size: 14px;
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+  }
+  
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-15px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(15px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  
+  @media (max-width: 768px) {
+    .nomina-wrapper {
+      flex-direction: column;
+    }
+    
+    .nomina-sidebar {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 16px 12px;
+      border-right: none;
+      border-bottom: 1px solid #d0e4d0;
+    }
+    
+    .sidebar-nomina-nav {
+      flex-direction: row;
+      gap: 10px;
+    }
+    
+    .nav-button-nomina {
+      font-size: 14px;
+    }
+    
+    .nomina-main {
+      padding: 16px;
+    }
+  }
+  
